@@ -7,6 +7,7 @@
   --background-secondary-color: #f5f4fa;
   --background-footer-color: #2f303a;
   --accent-color: #2196f3;
+  --soc-link-primary-color: #AFB1B8;
 }
 
 body {
@@ -161,11 +162,36 @@ img {
   align-items: center;
 }
 
-.site-nav-link,
-.contact-nav-link {
+.site-nav-link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.contact-nav-link{
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.contact-nav-link .telephone{
+  padding: 0;
+  margin: 0;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+
+.contact-nav-link .envelope{
+  width: 16px;
+  height: 12px;
+  padding: 0;
+  margin: 0;
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 
@@ -176,6 +202,14 @@ img {
 .contact-nav-list {
   display: flex;
 }
+
+
+
+/* .contact-nav-item{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+} */
 
 .contact-nav-item:not(:last-child) {
   margin-right: 50px;
@@ -240,6 +274,18 @@ img {
   background-color: var(--background-footer-color); 
 }
 
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+ 
+  background-image: linear-gradient(rgba(47,48,58,0.4), rgba(47,48,58,0.4)),url(../images/hero/hero-optimize.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
 .hero-title {
   margin-bottom: 30px;
 
@@ -260,6 +306,15 @@ img {
 
 .feature-list-item {
   width: calc((100% - 3 * 30px) / 4);
+}
+
+.feature-list-item>.blank{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  background-color: var(--background-secondary-color);
 }
 
 .feature-list-item:not(:last-child) {
@@ -341,6 +396,28 @@ img {
   font-size: 16px;
   line-height: 1.19;
 }
+.social-link-btn{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: teal;
+  border-radius: 50%;
+  color: var(--soc-link-primary-color);
+}
+
+.social-link-btn:hover,
+.social-link-btn:focus{
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.social-link-img{
+  fill: currentColor;
+}
+
+
 /* TEAM END */
 
 /* PORTFOLIO */
