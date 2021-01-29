@@ -207,21 +207,8 @@ img {
   color: inherit;
 }
 
-.contact-nav-link .telephone{
-  padding: 0;
-  margin: 0;
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  fill: currentColor;
-}
 
-
-.contact-nav-link .envelope{
-  width: 16px;
-  height: 12px;
-  padding: 0;
-  margin: 0;
+.contact-nav-link>.device{
   margin-right: 10px;
   fill: currentColor;
 }
@@ -247,7 +234,7 @@ img {
   color: var(--primary-white-color);
 }
 
-.header.button-line{
+.header.bottonm-line{
   border-bottom: 1px solid #ECECEC;;
 }
 /* HEADER END */
