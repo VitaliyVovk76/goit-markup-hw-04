@@ -151,6 +151,17 @@ img {
   align-items: center;
 }
 
+.header .link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.header .link:hover,
+.header .link:focus {
+  color: var(--accent-color);
+}
+
 .site-nav {
   display: flex;
   align-items: centr;
@@ -162,10 +173,28 @@ img {
   align-items: center;
 }
 
+.site-nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .site-nav-link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+
+  color: var(--title-color);
+}
+
+.site-nav-link.current {
+  color: var(--accent-color);
+}
+
+.contact-nav-list {
+  display: flex;
+}
+
+.contact-nav-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .contact-nav-link{
@@ -174,6 +203,8 @@ img {
   justify-content: center;
   padding-top: 32px;
   padding-bottom: 32px;
+
+  color: inherit;
 }
 
 .contact-nav-link .telephone{
@@ -193,30 +224,6 @@ img {
   margin: 0;
   margin-right: 10px;
   fill: currentColor;
-}
-
-
-
-
-
-.site-nav-item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.contact-nav-list {
-  display: flex;
-}
-
-
-
-/* .contact-nav-item{
-  display: flex;
-  text-align: center;
-  justify-content: center;
-} */
-
-.contact-nav-item:not(:last-child) {
-  margin-right: 50px;
 }
 
 .logo {
@@ -240,31 +247,7 @@ img {
   color: var(--primary-white-color);
 }
 
-.site-nav .link {
-  color: var(--title-color);
-}
-
-.contact-nav .link {
-  color: var(--text-primary-color);
-}
-
-.header .link {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: inherit;
-}
-
-.header .link:hover,
-.header .link:focus {
-  color: var(--accent-color);
-}
-
-.link.current {
-  color: var(--accent-color);
-}
-
-.header.portfolio{
+.header.button-line{
   border-bottom: 1px solid #ECECEC;;
 }
 /* HEADER END */
@@ -488,7 +471,6 @@ img {
 
 .kard-list-item {
   width: calc((100% - 2 * 30px) / 3);
-  border: 1px solid #eeeeee;
 }
 
 .kard-list-item:not(:nth-last-child(-n + 3)) {
@@ -509,6 +491,9 @@ img {
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
+  border-left: 1px solid#eeeeee;
+  border-right: 1px solid#eeeeee;
+  border-bottom: 1px solid#eeeeee;
 
   background-color: var(--primary-white-color);
 }
