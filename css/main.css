@@ -208,7 +208,7 @@ img {
 }
 
 
-.contact-nav-link>.device{
+.contact-nav-link>.link-img{
   margin-right: 10px;
   fill: currentColor;
 }
@@ -257,7 +257,6 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
 }
 
 .hero-title {
