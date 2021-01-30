@@ -394,6 +394,10 @@ img {
   justify-content: center;
 }
 
+.social-link-item:not(:last-child) {
+  margin-right: 10px;
+}
+
 .social-link-btn {
   display: flex;
   text-align: center;
@@ -402,10 +406,6 @@ img {
   height: 44px;
   border-radius: 50%;
   color: var(--soc-link-primary-color);
-}
-
-.social-link-item:not(:last-child) {
-  margin-right: 10px;
 }
 
 .social-link-btn:hover,
