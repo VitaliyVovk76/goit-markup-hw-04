@@ -390,12 +390,7 @@ img {
 
 .social-link-list {
   display: flex;
-  text-align: center;
-  justify-content: center;
-}
-
-.social-link-item:not(:last-child) {
-  margin-right: 10px;
+  justify-content: space-between;
 }
 
 .social-link-btn {
