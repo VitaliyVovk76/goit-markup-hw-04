@@ -390,7 +390,12 @@ img {
 
 .social-link-list {
   display: flex;
-  justify-content: space-between;
+
+  /* justify-content: space-between; */
+}
+
+.social-link-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social-link-btn {
