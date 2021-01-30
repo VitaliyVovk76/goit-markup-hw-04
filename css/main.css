@@ -390,6 +390,8 @@ img {
 
 .social-link-list {
   display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 .social-link-btn {
@@ -413,6 +415,10 @@ img {
 }
 
 .social-link-img {
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+
   fill: currentColor;
 }
 /* TEAM END */
